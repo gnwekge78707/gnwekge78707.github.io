@@ -1,0 +1,872 @@
+<!DOCTYPE html><html lang="en" class="JiaruiWu"><head>
+    
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Jiarui Wu">
+    <meta name="author" content="Jiarui Wu">
+    <meta name="keywords" content="Jiarui Wu,ComputerVision,Machine,Learning">
+
+    <script type="text/javascript" async="" src="js/analytics.js"></script>
+    <script async="" src="js/analytics.js"></script>
+    <!-- <script src="./9JZkBilUSmGpH8F5SvwGOfpXbTA.js"></script> -->
+    <script src="js_1"></script>
+    <link href="images/favicon.png" rel="icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/academicons.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-02L3BXBHCW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-02L3BXBHCW');
+    </script>
+    
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css_1" rel="stylesheet">
+
+
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+    <!-- <link href="./brands.css" rel="stylesheet"> -->
+
+    <!-- <link href="./academicons.min.css" rel="stylesheet"> -->
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <title>Jiarui Wu @ MMLab, CUHK</title>
+<style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted rgb(218, 174, 248);
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: rgb(218, 174, 248);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* 定位 */
+        position: absolute;
+        z-index: 1;
+        top: 105%;
+    }
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+</style></head>
+
+<body data-gr-c-s-loaded="true">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://yifanjiang.net/#">
+                    <serif>Jiarui Wu</serif>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="https://yifanjiang.net/#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="https://yifanjiang.net/#bio">Biography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="https://yifanjiang.net/#pub">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="https://yifanjiang.net/#services">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="https://yifanjiang.net/#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Links
+                            </a>
+                            
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="https://yifanjiang.net/#bio">Biography</a>
+                                <a class="dropdown-item" href="https://yifanjiang.net/#pub">Publications</a>
+                                <a class="dropdown-item" href="https://yifanjiang.net/#services">Services</a>
+                                <a class="dropdown-item" href="https://yifanjiang.net/#invited-talks">Invited Talks</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="sec-wrapper home-wrapper" id="home" style="background-color: white;">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-auto col-wrapper">
+                        <img src="images/avatar1.JPG" class="circle-img" style="width: 200px;" alt="Yifan Jiang">
+                    </div>
+                    <div class="col-sm col-wrapper">
+                        <div class="description">
+                            <h1 class="name">Jiarui Wu</h1>
+                            <div>Ph.D. student at MMLab, The Chinese University of Hong Kong</div>
+                            <div>Email: wujiarui At buaa Dot edu Dot cn</div>
+                            <div>
+                                
+                                <a href="https://scholar.google.com/citations?user=0Nf9tWoAAAAJ&amp;hl=en" class="ai ai-google-scholar"></a>
+                                <a href="https://scholar.google.com/citations?user=0Nf9tWoAAAAJ&amp;hl=en" class="fab fa-twitter"></a>
+                                <a href="https://scholar.google.com/citations?user=0Nf9tWoAAAAJ&amp;hl=en" class="fab fa-linkedin"></a>
+                                <a href="https://github.com/gnwekge78707" class="fab fa-github"></a>
+                                <!-- <br> -->
+<!--                                <a href="./Yifan_Jiang_CV.pdf">[CV]</a>-->
+<!--                                <a href="./RS.pdf">[Research Statement]</a>-->
+                                <!-- <a href="./Yifan_Jiang_CV.pdf">[CV]</a>
+                                <a href="./Research_Statement.pdf">[Research Statement]</a>
+                                <a href="https://github.com/yifanjiang19">[Github]</a>
+                                <a href="https://scholar.google.com/citations?user=PMeFEOIAAAAJ&hl=en" >[Google Scholar]</a>
+                                <a href="https://twitter.com/YifanJiang17">[Twitter]</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-12 col-lg col-wrapper">
+                        <div class="interests">
+                            <h2 class="section-title">Research Interests</h2>
+                            <ul>
+                                <li>Generative Models</li>
+                                <li>Computational Photography</li>
+                                <li>3D Vision</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="sec-wrapper bio-wrapper" id="bio">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-wrapper">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-wrapper" style="font-size:12pt">
+                        <div class="col col-wrapper">
+                            <div class="section-title">About</div>
+                        </div>
+                        <p>
+                            I am a first-year Ph.D. student at <a href="https://mmlab.ie.cuhk.edu.hk/">CUHK MMLab</a>, advised by Prof. <a href="https://mmlab.ie.cuhk.edu.hk/">Tianfan Xue</a>. I got my B.E. degree in the School of Computer Science at Beihang University in 2024.
+                            During my undergraduate years, I also worked with Prof. <a href="https://scholar.google.com/citations?user=voqw10cAAAAJ&hl=en&oi=ao">Shanghang Zhang</a> at Peking University.
+
+<!--                            I've interned at <img src="images/Apple.svg" style="height: 18px; margin-bottom: 6px;"> <a href="https://www.apple.com" style="color:black">Apple </a><a href="https://machinelearning.apple.com/" style="color:#c2c0bf">(AI/ML)</a>, <img style="height:14px; margin-bottom:4px" src="images/adobe_logo.svg"> <a style="color:#FA0F00" href="https://www.adobe.com/">Adobe </a><a style="color:#c2c0bf" href="https://graphics.stanford.edu/~levoy/">(Marc Levoy's team)</a>,-->
+<!--                            <a href="https://research.google/">-->
+<!--                                <font style="color:#4285F4">G</font><font style="color:#DB4437">o</font><font style="color:#F4B400">o</font><font style="color:#4285F4">g</font><font style="color:#0F9D58">l</font><font style="color:#DB4437">e</font> <font style="color:#5F6368">Research</font></a> <a style="color:#c2c0bf" href="https://blog.x.company/meet-gcam-the-x-graduate-that-gave-us-a-whole-new-point-of-view-3ee86657d6c9">(GCam)</a>, <img style="height:14px; margin-bottom:4px" src="images/adobe_logo.svg"> <a style="color:#FA0F00" href="https://www.adobe.com/">Adobe </a> <a style="color:#c2c0bf">(ART)</a>, and <img style="width:18px; margin-bottom:3px" src="images/ByteDance_Logo.png"> <a style="color:#2F55AE" href="https://ailab.bytedance.com/">Bytedance AI Lab</a> <a style="color:#c2c0bf">(US CV Lab)</a>. -->
+                        </p>
+                        <p id="research-interests">I mainly study these topics:
+                        <ul style="margin-top: -10px;">
+                            <li><b>Computational Phtography:</b> Image/Video Editing and Manipulation, 3D Reconstruction</li>
+                            <li><b>Machine Vision Generalization:</b> Test-time Adaptation, Continual Learning</li>
+                        </ul></p>
+
+                        <p style="font-style:italic">
+                            <b>News</b>: 
+                            </p><ul style="margin-top: -10px;">
+                                <li> [Sep 2024] One paper accepted by NeurIPS 2024. </a> </li>
+                                <li> [Feb 2024] One paper accepted by CVPR 2024. </a> </li>
+                                <li> [Dec 2023] One paper accepted by AAAI 2024. </li>
+                            </ul>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="sec-wrapper exp-wrapper" id="exp">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-wrapper">
+                        <div class="section-title">Experience</div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center section-item">
+                    <div class="col-sm-9 col-lg-12 col-wrapper">
+                        <div class="row">
+                            <div class="figure">
+                                <a href="https://research.google/"><img src="./assets/adobe.png"></a>
+                            </div>
+                            <div class="col-lg-4 col-wrapper">
+                                <div class="title">
+                                    <a href="https://www.adobe.com/careers.html">Adobe</a>
+                                </div>
+                                <div class="info">
+                                    <div>Research Intern with <a href="http://graphics.stanford.edu/~levoy/">Marc
+                                            Levoy</a>'s team</div>
+                                    <div>Working with:
+                                        <a href="https://likesum.github.io/">Zhihao Xia</a>,
+                                        <a href="https://ceciliavision.github.io/">Cecilia Zhang</a>,
+                                        <a href="https://xiuming.info/">Xiuming Zhang</a>,
+                                        <a href="https://people.csail.mit.edu/jiawen/">Jiawen Chen</a>
+                                    </div>
+                                    <div class="location">Sanjose, CA, USA</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-wrapper">
+                                <time>May. 2022 - </time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center section-item">
+                    <div class="col-sm-9 col-lg-12 col-wrapper">
+                        <div class="row">
+                            <div class="figure">
+                                <a href="https://research.google/"><img src="./assets/google.png"
+                                        style="height:80%; width:80%"></a>
+                            </div>
+                            <div class="col-lg-4 col-wrapper">
+                                <div class="title">
+                                    <a href="https://research.google/">Google Research</a>
+                                </div>
+                                <div class="info">
+                                    <div>Research Intern with Gcam team</div>
+                                    <div>Worked with:
+                                        <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+                                        <a href="https://bartwronski.com/about/">Bartlomiej Wronski</a>,
+                                        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+                                        <a href="https://scholar.google.co.uk/citations?user=dNCrPskAAAAJ&hl=en">Peter
+                                            Hedman</a>,
+                                        <a href="https://jonbarron.info/">Jonathan T. Barron</a>
+                                    </div>
+                                    <div class="location">Mountain View, CA, USA</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-wrapper">
+                                <time>May. 2021 - May. 2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center section-item">
+                    <div class="col-sm-9 col-lg-12 col-wrapper">
+                        <div class="row">
+                            <div class="figure">
+                                <a href="https://www.adobe.com/careers.html"><img src="./assets/adobe.png"></a>
+                            </div>
+                            <div class="col-lg-4 col-wrapper">
+                                <div class="title">
+                                    <a href="https://www.adobe.com/careers.html">Adobe</a>
+                                </div>
+                                <div class="info">
+                                    <div>Research Intern with Applied Research Team</div>
+                                    <div>Worked with:
+                                        <a href="https://sites.google.com/site/hezhangsprinter/">He Zhang</a>,
+                                        <a href="https://jimmie33.github.io/">Jianming Zhang</a>,
+                                        <a href="https://yilinwang.org/">Yilin Wang</a>,
+                                        <a href="https://sites.google.com/site/zhelin625/">Zhe Lin</a>,
+                                        <a href="http://www.kalyans.org/">Kalyan Sunkavalli</a>,
+                                    </div>
+                                    <div class="location">Sanjose CA, USA</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-wrapper">
+                                <time>May. 2020 - Aug. 2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center section-item">
+                    <div class="col-sm-9 col-lg-12 col-wrapper">
+                        <div class="row">
+                            <div class="figure">
+                                <a href="https://openreview.net/forum?id=GMgHyUPrXa"><img
+                                        src="./assets/ByteDance_Logo.png" alt="ISTA"></a>
+                            </div>
+                            <div class="col-lg-4 col-wrapper">
+
+                                <div class="title">
+                                    <a href="https://ailab.bytedance.com/">Bytedance AI Lab</a>
+                                </div>
+                                <div class="info">
+                                    <div>Research Intern</div>
+                                    <div>Worked with: <a
+                                            href="https://scholar.google.com/citations?user=PGtHUI0AAAAJ&hl=en">Ding
+                                            Liu</a>, <a
+                                            href="https://scholar.google.com/citations?user=Vu1OqIsAAAAJ&hl=en">Chen
+                                            Fang</a>, and <a
+                                            href="https://scholar.google.com/citations?user=pViZYwIAAAAJ&hl=en">Xiaohui
+                                            Shen</a>,
+                                        <a href="http://scholar.google.com/citations?user=HWFvq_wAAAAJ&hl=en">Jianchao
+                                            Yang</a>.
+                                    </div>
+                                    <div class="location">Beijing, China</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-wrapper">
+                                <time>Jan. 2019 - June. 2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            <!-- </div>
+        </div> -->
+
+        <div class="sec-wrapper pub-wrapper" id="pub">
+            <div class="container-fluid" id="main-pub-container">
+                <div class="row">
+                    <div class="col col-wrapper">
+                        <div class="section-title" id="selected_publication">Selected Publications</div>
+                    </div>
+                </div>
+                <h5 class="subtitle" id="all-publications">
+                    (
+                    <a id="publication-by-selected" href="javascript:;" ,="" onclick="publicationBySelected();" class="activated">show selected</a> /
+                    <a id="publication-by-date" href="javascript:;" ,="" onclick="publicationByDate();" class="">show
+                        all by date</a> /
+                    <a id="publication-by-topic" href="javascript:;" ,="" onclick="publicationByTopic();" class="">show
+                        all by topic</a>
+                    )
+                </h5>
+                <p class="subtitle-aux"><span class="bold">Topics:</span>
+                    <a href="./#topic-Image-Synthesis-and-Processing" onclick="return publicationByTopicSpecific(this)" data-topic="Image-Synthesis-and-Processing" class="">Computational Photography</a> /
+                    <a href="./#topic-Open-World-Generalization" onclick="return publicationByTopicSpecific(this)" data-topic="Open-World-Generalization" class="">Machine Vision Generalization</a> /
+                    <a href="./#topic-3D-Vision" onclick="return publicationByTopicSpecific(this)" data-topic="3D-Vision" class="">3D Reconstruction</a> /
+                    <span class="note">(*: indicates equal contribution.)</span>
+                </p>
+
+                
+
+                <div id="main-pub-card-container" class="">
+
+                    <div class="pub-card" data-topic="Image-Synthesis-and-Processing" data-year="2024" data-selected="true">
+                        <div class="row align-items-center section-item">
+                            <div class="col-xs-12 col-md-3 col-lg-4 col-wrapper">
+                                <div class="figure">
+                                    <div style="overflow: hidden;">
+                                        <img src="images/efficient_3dim.jpeg" style="width:100%; padding-left:10px; float:left; display:inline">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-8 col-wrapper">
+                                <div class="title">
+                                    <a>
+                                        Goal Conditioned Reinforcement Learning for Photo Finishing Tuning
+                                    </a>
+                                </div>
+                                <div class="authors">
+                                    <me>Jiarui Wu</me>,
+                                    Yujin Wang,
+                                    Lingen Li,
+                                    Zhang Fan,
+                                    Tianfan Xue
+                                </div>
+                                <div><a id="conference">NeurIPS 2024</a> </div>
+                                <a href="https://github.com/OpenImagingLab/RLPixTuner">[Paper]</a>
+                                <a href="https://github.com/OpenImagingLab/RLPixTuner/">[Project Page]</a>
+                                <a href="https://github.com/OpenImagingLab/RLPixTuner">[Code]</a>
+                                <a href="https://github.com/OpenImagingLab/RLPixTuner">[Youtube]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pub-card" data-topic="Open-World-Generalization" data-year="2024" data-selected="true">
+                        <div class="row align-items-center section-item">
+                            <div class="col-xs-12 col-md-3 col-lg-4 col-wrapper">
+                                <div class="figure">
+                                    <div style="overflow: hidden;">
+                                        <!-- <video src="./assets/pair_diffusion.mp4" style="width:90%; padding-left:10px; float:left; margin-top: -20px; display:inline" loop autoplay muted
+                                        playsinline></video> -->
+                                        <img src="images/efficient_3dim.jpeg" style="width:100%; padding-left:10px; float:left; display:inline">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-8 col-wrapper">
+                                <div class="title">
+                                    <a>
+                                        Exploring Sparse Visual Prompt for Domain Adaptive Dense Prediction
+                                    </a>
+                                </div>
+                                <div class="authors">
+                                    <me>Jiarui Wu*</me>,
+                                    Senqiao Yang*, Jiaming Liu*, Xiaoqi Li, Qizhe Zhang, Mingjie Pan, Shanghang Zhang
+                                </div>
+                                <div><a id="conference">AAAI 2024</a></div>
+                                <a href="https://arxiv.org/abs/2303.09792">[Paper]</a>
+                                <a href="https://github.com/Anonymous-012/SVDP">[Code]</a>
+                                <a href="https://senqiaoyang.com/project/svdp/">[Project Page]</a>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="pub-card" data-topic="3D-Vision" data-year="2023" data-selected="true">
+                        <div class="row align-items-center section-item">
+                            <div class="col-xs-12 col-md-3 col-lg-4 col-wrapper">
+                                <div class="figure">
+                                    <div style="overflow: hidden;">
+                                        <img src="images/prompt_diffusion.webp" style="width:100%; padding-left:10px; float:left; display:inline">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-8 col-wrapper">
+                                <div class="title">
+                                    <a>
+                                        NTO3D: Neural Target Object 3D Reconstruction with Segment Anything
+                                    </a>
+                                </div>
+                                <div class="authors">
+                                    Xiaobao Wei,
+                                    Renrui Zhang,
+                                    <me>Jiarui Wu</me>,
+                                    Jiaming Liu, Ming Lu, Yandong Guo, Shanghang Zhang
+                                </div>
+                                <div><a id="conference">CVPR 2024,</a> </div>
+                                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Wei_NTO3D_Neural_Target_Object_3D_Reconstruction_with_Segment_Anything_CVPR_2024_paper.pdf">[Paper]</a>
+                                <a href="https://github.com/ucwxb/NTO3D">[Code]</a>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="pub-card" data-topic="Open-World-Generalization" data-year="2023" data-selected="false">
+                        <div class="row align-items-center section-item">
+                            <div class="col-xs-12 col-md-3 col-lg-4 col-wrapper">
+                                <div class="figure">
+                                    <div style="overflow: hidden;">
+                                        <img src="images/efficient_3dim.jpeg" style="width:100%; padding-left:10px; float:left; display:inline">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-8 col-wrapper">
+                                <div class="title">
+                                    <a>
+                                        PM-DETR: Domain adaptive prompt memory for object detection with transformers
+                                    </a>
+                                </div>
+                                <div class="authors">
+                                    Peidong Jia,
+                                    Jiaming Liu,
+                                    Senqiao Yang,
+                                    <me>Jiarui Wu</me>,
+                                    Xiaodong Xie, Shanghang Zhang
+                                </div>
+                                <div><a id="conference">preprint</a></div>
+                                <a href="https://arxiv.org/abs/2307.00313">[Paper]</a>
+                            </div>
+                        </div>
+                    </div> 
+
+
+
+                    <!-- <div class="pub-card" data-topic="Generative-Model" data-year="2018" data-selected="false">
+                        <div class="row align-items-center section-item">
+                            <div class="col-xs-12 col-md-3 col-lg-4 col-wrapper">
+                                <div class="figure">
+                                    <a href="https://arxiv.org/abs/1804.02047"><img src="./assets/D.jpg"
+                                            alt="PS-GAN"></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-9 col-lg-8 col-wrapper">
+                                <div class="title"> 
+                                    <a>
+                                        Pedestrian-Synthesis-GAN: Generating Pedestrian Data in Real Scene and Beyond
+                                    </a>
+                                </div>
+                                <div class="authors">
+                                    Xi Ouyang, Yu Cheng,
+                                    <me>Yifan Jiang</me>, Chun-Liang Li, Pan Zhou
+                                </div>
+                                <div><a id="conference">Arxiv preprint</a></div>
+                                <a href="https://github.com/yifanjiang97/Pedestrian-Synthesis-GAN">[Code]</a>
+                                <a href="https://arxiv.org/abs/1804.02047">[Paper]</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+        <div id="click-full-pub" style="font-size:16px; margin-left:20px; font-style:italic">
+            <p>
+                Click to show <a href="#research-interests" ,="" onclick="publicationByDate();" class="">[Full Publications]</a>
+            </p>
+        </div>
+        <div id="click-selected-pub" style="font-size:16px; margin-left:20px; font-style:italic">
+            <p>
+                Click to show <a href="#research-interests" ,="" onclick="publicationBySelected();" class="">[Selected Publications]</a>
+            </p>
+        </div>
+        <br>
+        <br>
+        <!-- <div class="sec-wrapper exp-wrapper" id="exp">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-wrapper">
+                        <div class="section-title">More About Me</div>
+                    </div>
+                    <div class="col-sm-9 col-lg-12 col-wrapper" style="font-size:12pt; font-style:italic">
+                        <li>I like cocktail and sometimes I will mix drinks at home, though I am still a beginner :). </li>
+                        <li>I also enjoy piano, both classical and popular music. Playing the piano is my <a style="text-decoration:line-through">daily</a> weekly routine.</li>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="sec-wrapper exp-wrapper" id="services">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-wrapper">
+                        <div class="section-title">Education</div>
+                    </div>
+                    <div class="col-sm-9 col-lg-12 col-wrapper" style="font-size:12pt">
+                        <li><b>Ph.D. in Information Engineering, The Chinese University of Hong Kong</b>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aug. 2024 - present<br />
+                                Advisor: Prof. Tianfan Xue<br />
+                        </li>
+                        <li><b>B.Eng. in Computer Science and Technology, Beihang University</b>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aug. 2020 - Jul. 2024<br />
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec-wrapper exp-wrapper" id="selected honors">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-wrapper">
+                        <div class="section-title">Selected Awards</div>
+                    </div>
+                    <div class="col-sm-9 col-lg-12 col-wrapper" style="font-size:12pt">
+                        <li>[Jun 2024] Outstanding Graduate Thesis Award </li>
+                        <li>[Jun 2024] Outstanding Graduate Award </li>
+                        <li>[Nov 2023] SamSung Scholarship </li>
+                        <li>[Nov 2022] National Scholarship </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        <div class="sec-wrapper exp-wrapper" id="invited-talks">-->
+<!--            <div class="container-fluid">-->
+<!--                <div class="row">-->
+<!--                    <div class="col col-wrapper">-->
+<!--                        <div class="section-title">Invited Talk</div>-->
+<!--                    </div>-->
+<!--                    <div class="col-sm-9 col-lg-12 col-wrapper" style="font-size:12pt">-->
+<!--                        <li>[May 2023] <a style="color:#929292">"Extreme Novel-view Synthesis and 3D Content Creation using Deep Generative Prior"</a> at <a href="https://visual.ee.ucla.edu/web_series/" style="color:#bf5700;">Caltech &amp; UCLA</a>, and Apple</li>-->
+<!--                        <li>[Jan 2023] <a style="color:#929292">"Learning to Enhance Low-light Images without Paired Supervision"</a> at <a style="color:#bf5700;" href="https://signalprocessingsociety.org/newsletter/2023/01/sps-webinar-18-january-2023-presented-mr-yifan-jiang">[IEEE SPS Webinar]</a>, after my TIP work <a style="color:#bf5700;" href="https://arxiv.org/abs/1906.06972">EnlightenGAN</a> was highlighted as one of SPS's top-25 most downloaded articles on IEEE Xplore®, 2021-2022</li>-->
+<!--                        <li>[Jan 2022] <a style="color:#929292">"Fast and High Quality Image Denoising via Malleable Convolution"</a> at Adobe, NextCam.</li>-->
+<!--                        <li>[July 2021] <a style="color:#929292">"Vision Transformer for Image Generation, Editing, and Processing"</a> at Google Research, GCam.</li>-->
+<!--                        <li>[Mar 2021] <a style="color:#929292">-->
+<!--                                "TransGAN: Two Transformers Can Make One Strong GAN, and That Can Scale Up."-->
+<!--                            </a> at [机器之心], [智源社区], <a href="https://sites.google.com/view/cai-workshop" style="color:#bf5700;">[cai-workshop]</a>, University of Oregon</li>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div style="text-align:right; color:gray">
+            The website template was borrowed from <a href="https://pingchuan.ma/">[1]</a>, <a href="https://jiayuanm.com/">[2]</a>, and <a href="https://yifanjiang.net/">[3]</a>. Many thanks!
+        </div>
+        <br>
+        <br>
+        
+
+    </div>
+
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script type="text/javascript">
+
+        $.fn.isInViewport = function () {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).outerHeight();
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+
+        var allPublications = null;
+
+        function publicationBySelected() {
+            var a = $("#publication-by-selected")
+            var b = $("#selected_publication");
+            b.text("Selected Publications");
+            $("#main-pub-container .subtitle a").removeClass("activated");
+            $("#main-pub-container .subtitle-aux a").removeClass("activated");
+            a.addClass("activated");
+            $("#main-pub-card-container").html("");
+            // document.getElementById('main-pub-card-container').innerHTML = "";
+            for (var pubId = 0; pubId < allPublications.length; pubId++) {
+                var pub = $(allPublications[pubId]).clone();
+                if (pub.data("selected") == true) {
+                    $("#main-pub-card-container").append(pub);
+                }
+            }
+            var c = $("#click-selected-pub");
+            var d = $("#click-full-pub");
+            c.hide();
+            d.show();
+        }
+
+        function publicationByDate() {
+            var a = $("#publication-by-date");
+            if (a.hasClass("activated")) {
+                return;
+            }
+
+            var b = $("#selected_publication");
+            b.text("Full Publications");
+
+            $("#main-pub-container .subtitle a").removeClass("activated");
+            $("#main-pub-container .subtitle-aux a").removeClass("activated");
+            a.addClass("activated");
+
+            $("#main-pub-card-container").html("");
+            for (var pubId = 0; pubId < allPublications.length; pubId++) {
+                if (pubId == 0 || $(allPublications[pubId - 1]).data("year") != $(allPublications[pubId]).data("year")) {
+                    var year = $(allPublications[pubId]).data("year");
+                    $("#main-pub-card-container").append($("<h5 style='margin-top:10px' id='year-" + year.toString() + "'>" + year.toString() + "</h5>"));
+                }
+                var pub = $(allPublications[pubId]).clone();
+                // if (pub.data("selected") == true) {
+                //     pub.css({
+                //         background: "#FFFFD0",
+                //     });
+                // }
+                $("#main-pub-card-container").append(pub);
+            }
+            var c = $("#click-selected-pub");
+            var d = $("#click-full-pub");
+            c.show();
+            d.hide();
+        }
+
+        function publicationByTopicInner() {
+            var a = $("#publication-by-topic")
+            if (a.hasClass("activated")) {
+                return;
+            }
+            $("#main-pub-container .subtitle a").removeClass("activated");
+            a.addClass("activated");
+
+            $("#main-pub-card-container").html("");
+            for (var topicId in allTopics) {
+                var topic = allTopics[topicId].name;
+                var topicTitle = allTopics[topicId].title;
+                // var topicTitle = topic.split("-").map(function (a) { return a[0].toUpperCase() + a.substr(1).toLowerCase(); }).join(" ");
+
+                if (topicId == 0) {
+                    $("#main-pub-card-container").append($("<div style='margin-top: 30px; font-size: 22px; font-weight: bold'>" + "</div>"));
+                    $("#main-pub-card-container").append($("<h5" + " id='topic-" + topic + "'>" + "</h5>"));
+                    $("#main-pub-card-container").append($("<h4>" + topicTitle + "</h4>"));
+                }
+                else {
+                    $("#main-pub-card-container").append($("<div style='margin-top: 70px; font-size: 22px; font-weight: bold'>" + "</div>"));
+                    $("#main-pub-card-container").append($("<h5" + " id='topic-" + topic + "'>" + "</h5>"));
+                    $("#main-pub-card-container").append($("<h4>" + topicTitle + "</h4>"));
+                }
+                for (var pubId = 0; pubId < allPublications.length; pubId++) {
+                    var pub = $(allPublications[pubId]).clone();
+                    // if (pub.data("selected") == true) {
+                    //     pub.css({
+                    //         background: "#FFFFD0",
+                    //     });
+                    // }
+                    if (pub.data("topic").indexOf(topic) != -1) {
+                        $("#main-pub-card-container").append(pub);
+                    }
+                }
+            }
+            
+        }
+
+        function publicationByTopicSpecificInner(a) {
+            if ($(a).hasClass("activated")) {
+                return false;
+            }
+
+            $("#main-pub-container .subtitle-aux a").removeClass("activated");
+            $(a).addClass("activated");
+        }
+
+        function publicationByTopic() {
+            publicationByTopicInner();
+            var b = $("#selected_publication");
+            b.text("Full Publications");
+            var c = $("#click-selected-pub");
+            var d = $("#click-full-pub");
+            c.style.display = "block";
+            d.style.display = "none";
+            publicationByTopicSpecificInner($("#main-pub-container .subtitle-aux a:first"));
+            return true;
+        }
+
+        function publicationByTopicSpecific(a) {
+            publicationByTopicInner();
+            publicationByTopicSpecificInner(a);
+
+            var hash = a.hash;
+            $(hash).prop('id', hash.substr(1) + '-noscroll');
+            window.location.hash = hash;
+            $(hash + '-noscroll').prop('id', hash.substr(1));
+
+            if (!$(hash).isInViewport()) {
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1000, function () {
+                });
+            }
+
+            return false;
+        }
+
+        $(function () {
+            getRealSize = function (bgImg) {
+                var img = new Image();
+                img.src = bgImg.attr("src");
+                var width = img.width,
+                    height = img.height;
+                return {
+                    width: width,
+                    height: height
+                }
+            };
+
+            getRealWindowSize = function () {
+                var winWidth = null,
+                    winHeight = null;
+                if (window.innerWidth) winWidth = window.innerWidth;
+                else if ((document.body) && (document.body.clientWidth)) winWidth = document.body.clientWidth;
+                if (window.innerHeight) winHeight = window.innerHeight;
+                else if ((document.body) && (document.body.clientHeight)) winHeight = document.body.clientHeight;
+                if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+                    winHeight = document.documentElement.clientHeight;
+                    winWidth = document.documentElement.clientWidth
+                }
+                return {
+                    width: winWidth,
+                    height: winHeight
+                }
+            };
+
+            fullBg = function () {
+                var bgImg = $("#background");
+                var mainContainer = $("#main");
+                var firstFire = null;
+
+                function resizeImg() {
+                    var realSize = getRealSize(bgImg);
+                    var imgWidth = realSize.width;
+                    var imgHeight = realSize.height;
+
+                    if (imgWidth == 0 || imgHeight == 0) {
+                        setTimeout(function () {
+                            resizeImg();
+                        }, 200);
+                    }
+
+                    // console.log(realSize);
+                    var realWinSize = getRealWindowSize();
+                    var winWidth = realWinSize.width;
+                    var winHeight = realWinSize.height;
+                    var widthRatio = winWidth / imgWidth;
+                    var heightRatio = winHeight / imgHeight;
+                    // console.log(realWinSize);
+                    if (widthRatio > heightRatio) {
+                        bgImg.width(imgWidth * widthRatio + 'px').height(imgHeight * widthRatio + 'px').css({
+                            'top':
+                                -(imgHeight * widthRatio - winHeight) / 10 * 5 + 'px', 'left': '0'
+                        })
+                    } else {
+                        bgImg.width(imgWidth * heightRatio + 'px').height(imgHeight * heightRatio + 'px').css({
+                            'left':
+                                -(imgWidth * heightRatio - winWidth) / 10 * 3 + 'px', 'top': '0'
+                        })
+                    }
+                    // mainContainer.css({
+                    //     width: winWidth,
+                    //     height: winHeight
+                    // });
+                }
+
+                resizeImg();
+                window.onresize = function () {
+                    if (firstFire === null) {
+                        firstFire = setTimeout(function () {
+                            resizeImg();
+                            firstFire = null
+                        }, 100)
+                    }
+                }
+            };
+
+            targetColor = $("#main-content-container .col-info .name").css("color");
+            animatedLink = function (speed) {
+                $("#main-content-container .col-link li").hover(function () {
+                    $(this).find('.icon').animate({
+                        color: targetColor,
+                        borderColor: targetColor
+                    }, speed);
+                    $(this).find('.caption').animate({
+                        color: targetColor
+                    })
+                }, function () {
+                    $(this).find('.icon').animate({
+                        borderColor: '#cccccc',
+                        color: '#cccccc'
+                    }, speed);
+                    $(this).find('.caption').animate({
+                        color: '#cccccc'
+                    })
+                })
+            };
+
+            // fullBg();
+            // animatedLink(400);
+
+            allPublications = $("#main-pub-card-container .pub-card");
+            allTopicsLink = $("#main-pub-container .subtitle-aux a");
+            allTopics = [];
+            for (var topicId = 0; topicId < allTopicsLink.length; topicId++) {
+                allTopics.push({ name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html() });
+            }
+
+            $("#publication-by-selected").click();
+            $("#main-pub-card-container").removeClass("hide");
+        });
+        /* if my "reload" var isn't set locally.. getItem will be false */
+        if (!localStorage.getItem("reload")) {
+            /* set reload to true and then reload the page */
+            localStorage.setItem("reload", "true");
+            location.reload();
+        }
+        /* after reloading remove "reload" from localStorage */
+        else {
+            localStorage.removeItem("reload");
+            // localStorage.clear(); // or clear it, instead
+        }
+
+        
+    </script>
+
+
+
+
+
+</body></html>
