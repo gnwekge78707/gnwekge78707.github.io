@@ -262,10 +262,10 @@ nav {
 
 @media(min-width:767.98px) {
     .pub-wrapper .figure img {
-        max-height: 180px;
+        max-height: 144px;
     }
     .section-item {
-        min-height: 180px;
+        min-height: 144px;
     }
 }
 
@@ -391,4 +391,14 @@ nav {
 #main-pub-container .subtitle-aux a.activated:hover {
     text-decoration: none;
     cursor: initial
+}
+
+.pub-card .figure img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Set a maximum width */
+    max-height: 300px; /* Set a maximum height */
+    object-fit: cover; /* Crop the image to fit the dimensions */
+    margin-left: 10px; /* Keep the padding consistent */
+    display: block; /* Ensure proper alignment */
 }
