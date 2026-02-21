@@ -236,11 +236,11 @@ nav {
 }
 
 .pub-wrapper .authors {
-    color: var(--light-gray)
+    color: var(--dark-gray)
 }
 
 .pub-wrapper .authors a {
-    color: var(--light-gray);
+    color: var(--dark-gray);
     text-decoration: underline
 }
 
